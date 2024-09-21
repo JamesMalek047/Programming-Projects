@@ -1,0 +1,354 @@
+/*Header CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Rambla';
+    text-align: center;
+
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: #1f1d1d;
+    line-height: 1;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+    font-family: 'Rambla';
+    z-index: 1000;
+    align-items: center;
+}
+
+.inner_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 40%;
+    display: block;
+    margin: auto;
+    font-family: 'Rambla';
+}
+
+.logo_container {
+    height: 100%;
+    display: flex;
+    float: left;
+    font-family: 'Rambla';
+    align-items: center;
+}
+
+#Pages {
+    height: 10%;
+    margin-top: 4%;
+}
+.logo_container img {
+    height: 0%;
+    display: table-cell;
+    vertical-align: middle;
+    transform: translate(-50px, -10px);
+    /*# can specify font size of each word*/
+    font-family: 'Rambla';
+    align-items: center;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+    font-family: 'Rambla';
+    list-style: none;
+    display: flex;
+}
+
+.navigation a {
+    height: 100%;
+    /*to acess a tag in navigation, same for all type like logo.container*/
+    display: flex;
+    float: left;
+    padding: 0px 20px;
+    font-family: 'Rambla';
+    list-style: none;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    color: white;
+    font-family: 'Arial';
+    font-size: 16px;
+    transform: translate(-350px, 0px);
+    font-family: 'Rambla';
+}
+
+.section {
+    margin-top: 60px;
+    padding: 0 15px;
+}
+
+body {
+    /*#background-color: #333;*/
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+    font-family: 'Rambla';
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 150px;
+}
+
+.full-screen-image {
+    background-color: none;
+    position: relative;
+    width: 100%;
+    height: 125vh;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.full-screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+
+.header1 {
+    position: absolute;
+    top: 0%;
+    left: 27.5%;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 250px;
+    font-weight: bold;
+}
+
+
+.rounded-box {
+    position: absolute;
+    bottom:5%;
+    right:1.65%;
+    background-color: #555753;
+    border: 1px solid #555753;
+    color: black;
+    border-radius:10px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: underline;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+    text-align: center;
+    /*transform: translate(0px,200px);*/
+}
+
+.rounded-box:hover {
+    background-color: white;
+    color: #18041e;
+    cursor: pointer;
+}
+.text h2 {
+    font-size: 2em;
+}
+
+.text p {
+    font-size: 1.1 em;
+    line-height: 1.6;
+}
+
+.image img {
+    max-width: 50%;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+#Picture1 {
+    width: 100%;
+    height: 600px;
+    text-align: left;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    flex: 0 0 50%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text {
+    flex: 1;
+    padding: 0 20%;
+    text-align: left;
+}
+
+.image-with-text:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.image-with-text:nth-child(even) .text {
+    text-align: left;
+}
+
+#Picture3 {
+    width: 113.5%;
+}
+
+/*Contact Part */
+.container1 {
+    background: linear-gradient(to right, #8f91ab80 50%, #ffffff 50%), url(/img/background.jpg);
+    width: 100%;
+    height: 675px;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+}
+
+.user img {
+    width: 150px;
+    height: 150px;
+}
+
+.user {
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    border: 0px solid #ffffff;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -100%);
+    left: 50%;
+}
+
+.input-field {
+    margin: 20px 0px;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #b39d9d;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+form {
+    margin: 90px 50px;
+    width: 100%;
+}
+
+.form_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact_button {
+    background: rgb(31, 29, 29);
+    border: none;
+    padding: 7.5px 7.5px;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact_button:hover{
+    box-shadow: 5px,5px,5px gray;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.right {
+    text-align: center;
+}
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+span {
+    background: #fbfbfb;
+    box-shadow: 0 2px 5px #00000052;
+    padding: 5px;
+    line-height: 2;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.dialog {
+    transition: 0.2s all;
+    color: red;
+}
+
+#Take_Our_Survey a {
+    color: black;
+    text-decoration: none ;
+}
+
