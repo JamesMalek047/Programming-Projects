@@ -1,0 +1,10 @@
+class TPx
+-----------------
+keyboard: Scanner
+pixels: String
+H: int 
+L: int 
+-----------------
+main (String[]): void
+showTable(): void
+showValue: void

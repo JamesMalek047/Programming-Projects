@@ -1,0 +1,137 @@
+App
+
+Afficher le menu suivant
+    1. Triangle
+    2. Cercle
+    3. Rectangle
+    4. Cylindre
+    5. Cube
+    6. Sphère
+    7. Additionner deux vecteurs
+    8. Soustraire deux vecteurs
+    9. Multiplier deux vecteurs
+    10. Quit
+
+Demander l'utilisateur de choisir
+
+Tant que choix n'égale pas à 10
+    Si choix = 1
+        appel triangle
+    Si choix = 2 
+        appel cicle
+    Si choix = 3 
+        appel rectangle
+    Si choix = 4
+        appel cylinder 
+    Si choix = 5 
+        appel cube
+    Si choix = 6
+        appel sphere
+    Si choix = 7 
+        appel add_Vectors
+    Si choix = 8
+        appel substract_Vectors
+    Si choix = 9
+        appel multiply_Vectors
+    Si choix = 10
+Fin
+
+Méthode triangle
+    Demander l'utilisateur d'entrer trois côtés du triangle
+    Calcul l'aire du triangle en utilisant la formule 
+    aire = sqrt(s(s-a)(s-b)(s-c)) où s = (a+b+c)/2
+    Calcul le périmètre du triangle
+
+Méthode circle
+    Demander l'utilisateur la valeur du rayon
+    Calcul l'aire du triangle
+    Calcul le périmètre du triangle
+
+Méthode rectangle   
+    Demander l'utilisateur la valeur de la largeur et longueur
+    Calcul l'aire en multipliant la base par la hauteur
+    Calcul le périmètre du triangle
+
+Méthode cylinder 
+    Demander l'utilisateur la valeur du rayon et de la hauteur
+    Calculer l'aire du cylindre 
+
+Méthode cube
+    Demander l'utilisateur la valeur du côtés
+    Calculer le volume
+
+Méthode sphere
+    Demander l'utilisateur la valeur du rayon
+    Calculer le volume du Sphère
+
+Méthode add_Vectors
+    Demander l'utilisateur la valeur des deux coordonnés
+    Additionner les valeurs de x ensemble
+    Additionner les valeurs de y ensemble
+    Imprimer la nouvelle coordonné
+
+Méthode substract_Vectors
+    Demander l'utilisateur la valeur des deux coordonnés
+    Soustraire les valeurs de x ensemble
+    Soustraire les valeurs de y ensemble
+    Imprimer la nouvelle coordonné
+
+Méthode multiply_Vectors
+    Demander l'utilisateur la valeur des deux coordonnés
+    Additionner la somme des produits de x et y ensemble
+    Imprimer le prdouit scalaire
+
+
+Shape
+    Défini la variable color pour couleur
+    Crée les champs getArea() et getCircumference()
+
+    Crée la sous-classe Rectangle
+        calcule la valeur de la surface du rectangle
+        calcule la valeur du périmètre du rectangle
+
+    Créé la classe Circle
+        calcule l'aire du Cercle
+        calcule la circonférence du Cercle
+    
+    Créé la classe Triangle
+        calcule l'aire du Triangle
+        calcule le périmètre du Triangle 
+
+        Fin
+
+Shape3D 
+    Crée le champ getVolume
+
+    Crée la sous class Sphere
+    Calcule le volume du sphère en utilisant le polyphormisme
+
+    Crée la sous classe Cube
+    Calcule le volume du cube
+
+    Crée la sous classe Cylinder
+    Calcule le volume du cylindre
+    
+    Fin
+
+Vector2D
+     Définir les variables x et y 
+
+     Créer un constructeur de la classe
+
+     Créer la méthode d'addition add
+     Additionner les vecteurs ensemble
+
+     Créer la méthode de soustraction
+     Soustraire les vecteurs ensemble
+
+     Créer la méthode de multiplication
+     Trouver le produit scalaire des deux vecteurs
+
+     Imprimer le résultat avec la fonction print()
+
+    Fin
+
+
+Fin
+

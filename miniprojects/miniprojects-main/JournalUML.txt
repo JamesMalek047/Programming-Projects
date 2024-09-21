@@ -1,0 +1,8 @@
+class Journal
+-----------------
+keyboard: Scanner
+filename: String
+-----------------
+main (String[]): void
+activities(): String
+actualdate(): String

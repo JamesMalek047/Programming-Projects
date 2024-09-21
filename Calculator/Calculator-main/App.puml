@@ -1,0 +1,98 @@
+@startuml App
+
+class App {
+    + main(String[]) : void
+    + choice : int
+    + display_Menu() : void
+    + triangle() : void
+    + circle() : void
+    + rectangle() : void
+    + cylinder() : void
+    + cube() : void
+    + sphere() : void
+    + add_Vectors() : void
+    + substract_Vectors() : void
+    + multiply_Vectors() : void
+}
+
+class Shape {
+    - color : String 
+    # passThroughPositive : double 
+    + getArea() : double 
+    + getCircumference() : double 
+}
+
+class Rectangle extends Shape {
+    - width : double  
+    - length : double 
+    <|-- color : String
+    <|-- getArea() : double 
+    <|-- getCircumference() : double
+     + Rectangle (String, double, double)
+}
+
+class Circle extends Shape {
+    - radius : double 
+    <|-- color : String
+    <|-- getArea() : double 
+    <|-- getCircumference() : double
+    + Cricle ( String, double)
+}
+
+class Triangle extends Shape{ 
+    - side1 : double
+    - side2 : double
+    - side3 : double 
+    - s : double 
+    <|-- color : String
+    <|-- getArea() : double 
+    <|-- getCircumference() : double
+    + Triangle (String, double, double, double)
+}
+
+class Shape3D{ 
+    - color : String
+    + getVolume() : double
+    # passThroughPositive() : double 
+}
+
+class Sphere extends Shape3D{ 
+    - radius : double 
+    + Sphere( String, double)
+    <|-- color : String
+    <|-- getVolume() : double
+    <|-- passThroughPositive() : double 
+}
+
+class Cube extends Shape3D{
+    - side : double
+    + Sphere (String, double)
+    <|-- color : String
+    <|-- color : String getVolume()
+    <|-- passThroughPositive() : double
+}
+
+class Cylinder extends Shape3D{
+    - radius : double
+    - height : double
+    <|-- color : String
+    <|-- passThroughPositive() : double
+}
+
+class Vector2D{ 
+    - x : double
+    - y : double
+    + Vector2D()
+    + Vector2D(double, double)
+    + add(Vector2D v) : Vector2D
+    + substract(Vector2D v) : Vector2D
+    + scalarproduct(Vector2D v) : double
+    + print() : void
+}
+
+App --> Shape
+App --> Shape3D
+App --> Vector2D
+
+
+@enduml
